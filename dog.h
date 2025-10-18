@@ -9,6 +9,15 @@ public:
     Dog() = default;
     Dog(std::string name):Animal(name){}
 
+
+    Animal* GetFriend()override {
+
+        Cat* neko = new Cat("ƒ^ƒ}");
+        return neko;
+    }
+
+
+
     Animal* GetFriend()override;
 
     void Action() override {
